@@ -41,7 +41,10 @@
                                 <a href="<?php echo base_url('parse2') ?>">/parse2</a>
                             </li>
                             <li class="<?php echo $class == 'parse_prod' ? 'active' : '' ?>">
-                                <a href="<?php echo base_url('parse_prod') ?>">/parse_prod</a>
+                                <a href="<?php echo base_url('parse_prod') ?>">2:/parse_prod</a>
+                            </li>
+                            <li class="<?php echo $class == 'parse_prod2' ? 'active' : '' ?>">
+                                <a href="<?php echo base_url('parse_prod2') ?>">5:/parse_prod</a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

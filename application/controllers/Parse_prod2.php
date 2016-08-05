@@ -2,9 +2,9 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Parse_prod extends CI_Controller {
+class Parse_prod2 extends CI_Controller {
 
-    var $key = "parse_prod";
+    var $key = "parse_prod2";
 //    var $key2 = "parse_prod2";
     var $docker = "parse_prod";
     var $filename = "main_prod.js";
