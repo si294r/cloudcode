@@ -36,6 +36,9 @@ class Viewlog extends CI_Controller {
         } elseif ($class == "parse_prod2") {
             $key = "alegrium5";
             $command = "docker exec parse_prod tail --lines=25 /root/.pm2/logs/parse-production-error.log /root/.pm2/logs/parse-production-out.log";                        
+        } else {
+            $key = "";
+            $command = "";
         }
         
         if ($key != "" && $command != "") {
