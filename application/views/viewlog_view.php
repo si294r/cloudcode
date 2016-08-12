@@ -19,7 +19,7 @@
                 $.post('<?php echo base_url("viewlog/stream/" . $class) ?>', function (response) {
                     document.body.innerHTML = '<pre>' + response + '</pre>';
                     window.scrollTo(0,document.body.scrollHeight);
-                    setTimeout(load_viewlog, 2000)
+                    setTimeout(load_viewlog, 4000)
                 });
             }
             
