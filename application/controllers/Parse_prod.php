@@ -4,8 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Parse_prod extends CI_Controller {
 
-    var $key = "parse_prod";
-//    var $key2 = "parse_prod2";
+    var $key = "alegrium2";
     var $docker = "parse_prod";
     var $filename = "main_prod.js";
     
@@ -31,11 +30,8 @@ class Parse_prod extends CI_Controller {
         
         $this->load->model('cloudcode_model', 'cloudcode');
         $out = $this->cloudcode->set_source($this->key, $this->docker, $this->filename);
-//        $out2 = $this->cloudcode->set_source($this->key2, $this->docker, $this->filename);
         
         echo $out;
-//        echo "\r\n";
-//        echo $out2;
     }
 
 }

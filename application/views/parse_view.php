@@ -57,7 +57,10 @@
             <div id="editor" style="height: 500px;"></div>
 
             <div class="row" style="margin-top: 0px;">
-                <div class="col-md-8"></div>
+                <div class="col-md-8" style="padding-top: 20px;">
+                    <button type="button" class="btn" id="btnViewlog">&nbsp;&nbsp;View Log&nbsp;&nbsp;</button>
+                    <br><br>
+                </div>
                 <div class="col-md-4" style="text-align: right; padding-top: 20px;">
                     <button type="button" class="btn btn-default" data-loading-text="Saving..." id="btnSave">&nbsp;&nbsp;Save&nbsp;&nbsp;</button>
                     <br><br>
@@ -89,6 +92,9 @@
                         console.setValue(response);
                         btn.button('reset');
                     });
+                });
+                $('#btnViewlog').click(function () {
+                    window.open('<?php echo base_url("viewlog/index/" . $class) ?>');
                 });
             });
         </script>

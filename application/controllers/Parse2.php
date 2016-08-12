@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Parse2 extends CI_Controller {
 
-    var $key = "parse2";
+    var $key = "alegrium2";
     var $docker = "parse2";
     var $filename = "main2.js";
     
