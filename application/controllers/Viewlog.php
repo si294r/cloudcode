@@ -23,7 +23,8 @@ class Viewlog extends CI_Controller {
             $command = "docker exec php-fpm tail --lines=50 /var/log/apache2/access.log";
         } elseif ($class == "alegrium5") {
             $key = "alegrium5";
-            $command = "tail --lines=50 /var/log/apache2/access.log";
+            $command = "docker exec php-fpm tail --lines=50 /var/log/apache2/access.log";
+//            $command = "tail --lines=50 /var/log/apache2/access.log";
         } elseif ($class == "parse") {
             $key = "alegrium2";
             $command = "docker exec parse tail --lines=25 /root/.pm2/logs/parse-wrapper-error.log /root/.pm2/logs/parse-wrapper-out.log";                        
